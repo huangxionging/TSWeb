@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F249518F1EC562E900F1D00F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F249518E1EC562E900F1D00F /* main.m */; };
+		F24951921EC562E900F1D00F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F24951911EC562E900F1D00F /* AppDelegate.m */; };
+		F24951951EC562E900F1D00F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F24951941EC562E900F1D00F /* ViewController.m */; };
+		F24951981EC562E900F1D00F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F24951961EC562E900F1D00F /* Main.storyboard */; };
+		F249519A1EC562E900F1D00F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F24951991EC562E900F1D00F /* Assets.xcassets */; };
+		F249519D1EC562E900F1D00F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F249519B1EC562E900F1D00F /* LaunchScreen.storyboard */; };
+		F24951A81EC562E900F1D00F /* TSWebTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F24951A71EC562E900F1D00F /* TSWebTests.m */; };
+		F24951B31EC562E900F1D00F /* TSWebUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F24951B21EC562E900F1D00F /* TSWebUITests.m */; };
+		F24951C61EC5636E00F1D00F /* TSWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = F24951C51EC5636E00F1D00F /* TSWebView.m */; };
+		F24951C91EC5639E00F1D00F /* TSWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F24951C81EC5639E00F1D00F /* TSWebViewController.m */; };
+		F24951CD1EC563E100F1D00F /* web_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F24951CB1EC563E100F1D00F /* web_back@2x.png */; };
+		F24951CE1EC563E100F1D00F /* web_close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F24951CC1EC563E100F1D00F /* web_close@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F24951A41EC562E900F1D00F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F24951821EC562E900F1D00F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F24951891EC562E900F1D00F;
+			remoteInfo = TSWeb;
+		};
+		F24951AF1EC562E900F1D00F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F24951821EC562E900F1D00F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F24951891EC562E900F1D00F;
+			remoteInfo = TSWeb;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F249518A1EC562E900F1D00F /* TSWeb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TSWeb.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F249518E1EC562E900F1D00F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F24951901EC562E900F1D00F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F24951911EC562E900F1D00F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F24951931EC562E900F1D00F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F24951941EC562E900F1D00F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F24951971EC562E900F1D00F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F24951991EC562E900F1D00F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F249519C1EC562E900F1D00F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F249519E1EC562E900F1D00F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F24951A31EC562E900F1D00F /* TSWebTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TSWebTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F24951A71EC562E900F1D00F /* TSWebTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSWebTests.m; sourceTree = "<group>"; };
+		F24951A91EC562E900F1D00F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F24951AE1EC562E900F1D00F /* TSWebUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TSWebUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F24951B21EC562E900F1D00F /* TSWebUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSWebUITests.m; sourceTree = "<group>"; };
+		F24951B41EC562E900F1D00F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F24951C41EC5636E00F1D00F /* TSWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSWebView.h; sourceTree = "<group>"; };
+		F24951C51EC5636E00F1D00F /* TSWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSWebView.m; sourceTree = "<group>"; };
+		F24951C71EC5639E00F1D00F /* TSWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSWebViewController.h; sourceTree = "<group>"; };
+		F24951C81EC5639E00F1D00F /* TSWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSWebViewController.m; sourceTree = "<group>"; };
+		F24951CB1EC563E100F1D00F /* web_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "web_back@2x.png"; sourceTree = "<group>"; };
+		F24951CC1EC563E100F1D00F /* web_close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "web_close@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F24951871EC562E900F1D00F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F24951A01EC562E900F1D00F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F24951AB1EC562E900F1D00F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F24951811EC562E900F1D00F = {
+			isa = PBXGroup;
+			children = (
+				F249518C1EC562E900F1D00F /* TSWeb */,
+				F24951A61EC562E900F1D00F /* TSWebTests */,
+				F24951B11EC562E900F1D00F /* TSWebUITests */,
+				F249518B1EC562E900F1D00F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F249518B1EC562E900F1D00F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F249518A1EC562E900F1D00F /* TSWeb.app */,
+				F24951A31EC562E900F1D00F /* TSWebTests.xctest */,
+				F24951AE1EC562E900F1D00F /* TSWebUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F249518C1EC562E900F1D00F /* TSWeb */ = {
+			isa = PBXGroup;
+			children = (
+				F24951901EC562E900F1D00F /* AppDelegate.h */,
+				F24951911EC562E900F1D00F /* AppDelegate.m */,
+				F24951931EC562E900F1D00F /* ViewController.h */,
+				F24951941EC562E900F1D00F /* ViewController.m */,
+				F24951961EC562E900F1D00F /* Main.storyboard */,
+				F24951C11EC5631A00F1D00F /* TSWeb */,
+				F24951991EC562E900F1D00F /* Assets.xcassets */,
+				F249519B1EC562E900F1D00F /* LaunchScreen.storyboard */,
+				F249519E1EC562E900F1D00F /* Info.plist */,
+				F249518D1EC562E900F1D00F /* Supporting Files */,
+			);
+			path = TSWeb;
+			sourceTree = "<group>";
+		};
+		F249518D1EC562E900F1D00F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F249518E1EC562E900F1D00F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F24951A61EC562E900F1D00F /* TSWebTests */ = {
+			isa = PBXGroup;
+			children = (
+				F24951A71EC562E900F1D00F /* TSWebTests.m */,
+				F24951A91EC562E900F1D00F /* Info.plist */,
+			);
+			path = TSWebTests;
+			sourceTree = "<group>";
+		};
+		F24951B11EC562E900F1D00F /* TSWebUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F24951B21EC562E900F1D00F /* TSWebUITests.m */,
+				F24951B41EC562E900F1D00F /* Info.plist */,
+			);
+			path = TSWebUITests;
+			sourceTree = "<group>";
+		};
+		F24951C11EC5631A00F1D00F /* TSWeb */ = {
+			isa = PBXGroup;
+			children = (
+				F24951CA1EC563D000F1D00F /* Resource */,
+				F24951C21EC5635B00F1D00F /* Controllers */,
+				F24951C31EC5635B00F1D00F /* Views */,
+			);
+			path = TSWeb;
+			sourceTree = "<group>";
+		};
+		F24951C21EC5635B00F1D00F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F24951C71EC5639E00F1D00F /* TSWebViewController.h */,
+				F24951C81EC5639E00F1D00F /* TSWebViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F24951C31EC5635B00F1D00F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F24951C41EC5636E00F1D00F /* TSWebView.h */,
+				F24951C51EC5636E00F1D00F /* TSWebView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F24951CA1EC563D000F1D00F /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				F24951CB1EC563E100F1D00F /* web_back@2x.png */,
+				F24951CC1EC563E100F1D00F /* web_close@2x.png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F24951891EC562E900F1D00F /* TSWeb */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F24951B71EC562E900F1D00F /* Build configuration list for PBXNativeTarget "TSWeb" */;
+			buildPhases = (
+				F24951861EC562E900F1D00F /* Sources */,
+				F24951871EC562E900F1D00F /* Frameworks */,
+				F24951881EC562E900F1D00F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TSWeb;
+			productName = TSWeb;
+			productReference = F249518A1EC562E900F1D00F /* TSWeb.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F24951A21EC562E900F1D00F /* TSWebTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F24951BA1EC562E900F1D00F /* Build configuration list for PBXNativeTarget "TSWebTests" */;
+			buildPhases = (
+				F249519F1EC562E900F1D00F /* Sources */,
+				F24951A01EC562E900F1D00F /* Frameworks */,
+				F24951A11EC562E900F1D00F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F24951A51EC562E900F1D00F /* PBXTargetDependency */,
+			);
+			name = TSWebTests;
+			productName = TSWebTests;
+			productReference = F24951A31EC562E900F1D00F /* TSWebTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F24951AD1EC562E900F1D00F /* TSWebUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F24951BD1EC562E900F1D00F /* Build configuration list for PBXNativeTarget "TSWebUITests" */;
+			buildPhases = (
+				F24951AA1EC562E900F1D00F /* Sources */,
+				F24951AB1EC562E900F1D00F /* Frameworks */,
+				F24951AC1EC562E900F1D00F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F24951B01EC562E900F1D00F /* PBXTargetDependency */,
+			);
+			name = TSWebUITests;
+			productName = TSWebUITests;
+			productReference = F24951AE1EC562E900F1D00F /* TSWebUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F24951821EC562E900F1D00F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = huangxiong;
+				TargetAttributes = {
+					F24951891EC562E900F1D00F = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 6EW99E5PRN;
+						ProvisioningStyle = Automatic;
+					};
+					F24951A21EC562E900F1D00F = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 6EW99E5PRN;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F24951891EC562E900F1D00F;
+					};
+					F24951AD1EC562E900F1D00F = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 6EW99E5PRN;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F24951891EC562E900F1D00F;
+					};
+				};
+			};
+			buildConfigurationList = F24951851EC562E900F1D00F /* Build configuration list for PBXProject "TSWeb" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F24951811EC562E900F1D00F;
+			productRefGroup = F249518B1EC562E900F1D00F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F24951891EC562E900F1D00F /* TSWeb */,
+				F24951A21EC562E900F1D00F /* TSWebTests */,
+				F24951AD1EC562E900F1D00F /* TSWebUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F24951881EC562E900F1D00F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F249519D1EC562E900F1D00F /* LaunchScreen.storyboard in Resources */,
+				F249519A1EC562E900F1D00F /* Assets.xcassets in Resources */,
+				F24951CD1EC563E100F1D00F /* web_back@2x.png in Resources */,
+				F24951CE1EC563E100F1D00F /* web_close@2x.png in Resources */,
+				F24951981EC562E900F1D00F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F24951A11EC562E900F1D00F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F24951AC1EC562E900F1D00F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F24951861EC562E900F1D00F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F24951951EC562E900F1D00F /* ViewController.m in Sources */,
+				F24951921EC562E900F1D00F /* AppDelegate.m in Sources */,
+				F24951C61EC5636E00F1D00F /* TSWebView.m in Sources */,
+				F249518F1EC562E900F1D00F /* main.m in Sources */,
+				F24951C91EC5639E00F1D00F /* TSWebViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F249519F1EC562E900F1D00F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F24951A81EC562E900F1D00F /* TSWebTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F24951AA1EC562E900F1D00F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F24951B31EC562E900F1D00F /* TSWebUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F24951A51EC562E900F1D00F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F24951891EC562E900F1D00F /* TSWeb */;
+			targetProxy = F24951A41EC562E900F1D00F /* PBXContainerItemProxy */;
+		};
+		F24951B01EC562E900F1D00F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F24951891EC562E900F1D00F /* TSWeb */;
+			targetProxy = F24951AF1EC562E900F1D00F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F24951961EC562E900F1D00F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F24951971EC562E900F1D00F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F249519B1EC562E900F1D00F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F249519C1EC562E900F1D00F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F24951B51EC562E900F1D00F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F24951B61EC562E900F1D00F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F24951B81EC562E900F1D00F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6EW99E5PRN;
+				INFOPLIST_FILE = TSWeb/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.huangxiong.TSWeb;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F24951B91EC562E900F1D00F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6EW99E5PRN;
+				INFOPLIST_FILE = TSWeb/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.huangxiong.TSWeb;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F24951BB1EC562E900F1D00F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 6EW99E5PRN;
+				INFOPLIST_FILE = TSWebTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.huangxiong.TSWebTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TSWeb.app/TSWeb";
+			};
+			name = Debug;
+		};
+		F24951BC1EC562E900F1D00F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 6EW99E5PRN;
+				INFOPLIST_FILE = TSWebTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.huangxiong.TSWebTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TSWeb.app/TSWeb";
+			};
+			name = Release;
+		};
+		F24951BE1EC562E900F1D00F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 6EW99E5PRN;
+				INFOPLIST_FILE = TSWebUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.huangxiong.TSWebUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TSWeb;
+			};
+			name = Debug;
+		};
+		F24951BF1EC562E900F1D00F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 6EW99E5PRN;
+				INFOPLIST_FILE = TSWebUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.huangxiong.TSWebUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TSWeb;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F24951851EC562E900F1D00F /* Build configuration list for PBXProject "TSWeb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F24951B51EC562E900F1D00F /* Debug */,
+				F24951B61EC562E900F1D00F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F24951B71EC562E900F1D00F /* Build configuration list for PBXNativeTarget "TSWeb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F24951B81EC562E900F1D00F /* Debug */,
+				F24951B91EC562E900F1D00F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F24951BA1EC562E900F1D00F /* Build configuration list for PBXNativeTarget "TSWebTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F24951BB1EC562E900F1D00F /* Debug */,
+				F24951BC1EC562E900F1D00F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F24951BD1EC562E900F1D00F /* Build configuration list for PBXNativeTarget "TSWebUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F24951BE1EC562E900F1D00F /* Debug */,
+				F24951BF1EC562E900F1D00F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F24951821EC562E900F1D00F /* Project object */;
+}

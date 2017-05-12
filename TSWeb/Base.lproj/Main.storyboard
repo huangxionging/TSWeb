@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5yx-Q3-Kve">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--首页-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l9H-0K-XnQ">
+                                <rect key="frame" x="133" y="172" width="109" height="30"/>
+                                <state key="normal" title="网页1(标题变化)"/>
+                                <connections>
+                                    <action selector="webClick1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="do0-vJ-S8G"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GbE-iG-dq8">
+                                <rect key="frame" x="132" y="228" width="111" height="30"/>
+                                <state key="normal" title="网页2(标题固定)"/>
+                                <connections>
+                                    <action selector="webClick2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZN7-6F-74Y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1F1-U7-33O">
+                                <rect key="frame" x="86" y="282" width="203" height="30"/>
+                                <state key="normal" title="网页3(第一个网页无关闭按钮)"/>
+                                <connections>
+                                    <action selector="webClick3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lBT-yL-q89"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5rm-f0-qgB">
+                                <rect key="frame" x="141" y="332" width="93" height="30"/>
+                                <state key="normal" title="网页4(js交互)"/>
+                                <connections>
+                                    <action selector="webClick4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sPk-9D-QQc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5rm-f0-qgB" firstAttribute="top" secondItem="1F1-U7-33O" secondAttribute="bottom" constant="20" id="28I-1e-lZL"/>
+                            <constraint firstItem="1F1-U7-33O" firstAttribute="top" secondItem="GbE-iG-dq8" secondAttribute="bottom" constant="24" id="8YH-AF-mdD"/>
+                            <constraint firstItem="l9H-0K-XnQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ukg-VQ-6U8"/>
+                            <constraint firstItem="1F1-U7-33O" firstAttribute="centerX" secondItem="GbE-iG-dq8" secondAttribute="centerX" id="XBd-Lq-RqB"/>
+                            <constraint firstItem="l9H-0K-XnQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="108" id="lgw-CZ-ysn"/>
+                            <constraint firstItem="GbE-iG-dq8" firstAttribute="centerX" secondItem="l9H-0K-XnQ" secondAttribute="centerX" id="wNl-ar-KKs"/>
+                            <constraint firstItem="5rm-f0-qgB" firstAttribute="centerX" secondItem="1F1-U7-33O" secondAttribute="centerX" id="yQf-hc-LYN"/>
+                            <constraint firstItem="GbE-iG-dq8" firstAttribute="top" secondItem="l9H-0K-XnQ" secondAttribute="bottom" constant="26" id="zmE-X9-G7n"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="首页" id="VYz-nL-xwx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1900" y="123.68815592203899"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="kFv-No-geu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fBP-ET-UzI" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Nc1-Zo-Or5"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="arW-lr-xNP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="EzF-O7-DID"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3oW-lr-3l8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1160.8" y="123.68815592203899"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="3fG-Fc-rPg">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="5yx-Q3-Kve" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="KED-5b-f1Z">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="fBP-ET-UzI" kind="relationship" relationship="viewControllers" id="pFJ-d1-G8p"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mju-Kz-yx4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="221.59999999999999" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+</document>
