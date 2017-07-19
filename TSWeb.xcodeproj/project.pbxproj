@@ -19,6 +19,8 @@
 		F24951C91EC5639E00F1D00F /* TSWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F24951C81EC5639E00F1D00F /* TSWebViewController.m */; };
 		F24951CD1EC563E100F1D00F /* web_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F24951CB1EC563E100F1D00F /* web_back@2x.png */; };
 		F24951CE1EC563E100F1D00F /* web_close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F24951CC1EC563E100F1D00F /* web_close@2x.png */; };
+		F2D1AE251F1FA30900136926 /* TSSingleWebWindowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D1AE231F1FA30900136926 /* TSSingleWebWindowViewController.m */; };
+		F2D1AE261F1FA30900136926 /* TSSingleWebWindowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2D1AE241F1FA30900136926 /* TSSingleWebWindowViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,9 @@
 		F24951C81EC5639E00F1D00F /* TSWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSWebViewController.m; sourceTree = "<group>"; };
 		F24951CB1EC563E100F1D00F /* web_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "web_back@2x.png"; sourceTree = "<group>"; };
 		F24951CC1EC563E100F1D00F /* web_close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "web_close@2x.png"; sourceTree = "<group>"; };
+		F2D1AE221F1FA30900136926 /* TSSingleWebWindowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSSingleWebWindowViewController.h; sourceTree = "<group>"; };
+		F2D1AE231F1FA30900136926 /* TSSingleWebWindowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSSingleWebWindowViewController.m; sourceTree = "<group>"; };
+		F2D1AE241F1FA30900136926 /* TSSingleWebWindowViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSSingleWebWindowViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +171,9 @@
 			children = (
 				F24951C71EC5639E00F1D00F /* TSWebViewController.h */,
 				F24951C81EC5639E00F1D00F /* TSWebViewController.m */,
+				F2D1AE221F1FA30900136926 /* TSSingleWebWindowViewController.h */,
+				F2D1AE231F1FA30900136926 /* TSSingleWebWindowViewController.m */,
+				F2D1AE241F1FA30900136926 /* TSSingleWebWindowViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -299,6 +307,7 @@
 			files = (
 				F249519D1EC562E900F1D00F /* LaunchScreen.storyboard in Resources */,
 				F249519A1EC562E900F1D00F /* Assets.xcassets in Resources */,
+				F2D1AE261F1FA30900136926 /* TSSingleWebWindowViewController.xib in Resources */,
 				F24951CD1EC563E100F1D00F /* web_back@2x.png in Resources */,
 				F24951CE1EC563E100F1D00F /* web_close@2x.png in Resources */,
 				F24951981EC562E900F1D00F /* Main.storyboard in Resources */,
@@ -330,6 +339,7 @@
 				F24951921EC562E900F1D00F /* AppDelegate.m in Sources */,
 				F24951C61EC5636E00F1D00F /* TSWebView.m in Sources */,
 				F249518F1EC562E900F1D00F /* main.m in Sources */,
+				F2D1AE251F1FA30900136926 /* TSSingleWebWindowViewController.m in Sources */,
 				F24951C91EC5639E00F1D00F /* TSWebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -568,6 +578,7 @@
 				F24951B91EC562E900F1D00F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F24951BA1EC562E900F1D00F /* Build configuration list for PBXNativeTarget "TSWebTests" */ = {
 			isa = XCConfigurationList;
@@ -576,6 +587,7 @@
 				F24951BC1EC562E900F1D00F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F24951BD1EC562E900F1D00F /* Build configuration list for PBXNativeTarget "TSWebUITests" */ = {
 			isa = XCConfigurationList;
@@ -584,6 +596,7 @@
 				F24951BF1EC562E900F1D00F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

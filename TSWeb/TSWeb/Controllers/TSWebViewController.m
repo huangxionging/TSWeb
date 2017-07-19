@@ -152,7 +152,12 @@
 
 - (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation {
     self.loadFinished = YES;
-    self.navigationItem.title = self.webView.title;
+    if (self.isFixedTitle) {
+        self.navigationItem.title = self.webTitle;
+    } else {
+        self.navigationItem.title = self.webView.title;
+    }
+    
 }
 
 - (void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler {
@@ -160,11 +165,12 @@
     if (navigationAction.navigationType == WKNavigationTypeLinkActivated && self.loadFinished && [navigationAction.request.URL.absoluteString hasPrefix: @"http"]) {
         NSLog(@"%@", navigationAction.request.URL.absoluteString);
         decisionHandler(WKNavigationActionPolicyCancel);
-        // 为什么写 [self class] 而不是 TSMainWebViewController?
-        // 因为写 TSMainWebViewController 会限制扩展性, 当我们需要继承 TSMainWebViewController 来实现某些功能时, [self class]
-        // 是 TSMainWebViewController 的子类, 仍然可以使用我们实现的某些功能.
         TSWebViewController *webViewController = [[[self class] alloc] initWithURL: navigationAction.request.URL.absoluteString];
         webViewController.hidesBottomBarWhenPushed = YES;
+        if (self.isFixedTitle) {
+            webViewController.webTitle = self.webTitle;
+            webViewController.isFixedTitle = YES;
+        }
         [self.navigationController pushViewController: webViewController animated: YES];
     } else if ([navigationAction.request.URL.absoluteString hasPrefix: @"http"]){
         decisionHandler(WKNavigationActionPolicyAllow);
@@ -175,12 +181,6 @@
 
 - (void)webView:(WKWebView *)webView decidePolicyForNavigationResponse:(WKNavigationResponse *)navigationResponse decisionHandler:(void (^)(WKNavigationResponsePolicy))decisionHandler {
     decisionHandler(WKNavigationResponsePolicyAllow);
-    //    if (self.isShowFinished) {
-    //        decisionHandler(WKNavigationResponsePolicyCancel);
-    //    } else {
-    //
-    //    }
-    
 }
 
 - (void)webView:(WKWebView *)webView didStartProvisionalNavigation:(WKNavigation *)navigation {

@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "TSWebViewController.h"
+#import "TSSingleWebWindowViewController.h"
 
 @interface ViewController ()
 
@@ -35,9 +36,26 @@
 }
 
 - (IBAction)webClick2:(UIButton *)sender {
+    TSWebViewController *webViewController = [[TSWebViewController alloc] initWithURL: @"https://www.baidu.com"];
+    webViewController.webTitle = @"百度一下";
+    webViewController.isFixedTitle = YES;
+    webViewController.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController: webViewController animated: YES];
 }
 - (IBAction)webClick3:(UIButton *)sender {
+    TSWebViewController *webViewController = [[TSWebViewController alloc] initWithURL: @"https://www.baidu.com"];
+    webViewController.webTitle = @"百度一下";
+    webViewController.isFixedTitle = YES;
+    webViewController.hidesBottomBarWhenPushed = YES;
+    webViewController.isShowClose = NO;
+    [self.navigationController pushViewController: webViewController animated: YES];
 }
 - (IBAction)webClick4:(UIButton *)sender {
+}
+
+- (IBAction)webClick5:(id)sender {
+    TSSingleWebWindowViewController *webViewController = [[TSSingleWebWindowViewController alloc] init];
+    webViewController.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController: webViewController animated: YES];
 }
 @end

@@ -7,9 +7,15 @@
 //
 
 #import <WebKit/WebKit.h>
-
+IB_DESIGNABLE
 @interface TSWebView : WKWebView
 
+/**
+ Xib 最后会使用, 尺寸为 0
+
+ @return 初始化方法
+ */
+- (instancetype)initWithFrameZero;
 
 /**
  默认初始化方法
@@ -28,7 +34,6 @@
  @return webView 对象
  */
 - (instancetype)initWithFrame:(CGRect)frame configuration:(WKWebViewConfiguration *)configuration;
-
 
 /**
  添加脚本消息 block 回调

@@ -16,9 +16,14 @@
 @property (nonatomic, strong, readonly) TSWebView *webView;
 
 /**
- 标题, 如果有就全部固定, 没有就加载网页本身的标题
+ 标题, 如果有显示该标题, 没有就加载网页本身的标题
  */
 @property (nonatomic, copy) NSString *webTitle;
+
+/**
+ 标题固定, 就是所有网页标题都一样 
+ */
+@property (nonatomic, assign) BOOL isFixedTitle;
 
 /**
  是否出现关闭按钮, 默认是 YES 

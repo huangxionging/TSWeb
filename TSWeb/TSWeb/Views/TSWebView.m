@@ -41,6 +41,20 @@
     return self;
 }
 
+#pragma mark- 尺寸信息为 0  的初始化方法
+- (instancetype)initWithFrameZero {
+    if (self = [super initWithFrame: CGRectZero]) {
+        self.translatesAutoresizingMaskIntoConstraints = NO;
+    }
+    return self;
+}
+
+#pragma mark- xib 会调用的方法
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+    self = [self initWithFrameZero];
+    return self;
+}
+
 #pragma mark- blockDictionary
 - (NSMutableDictionary<NSString *,void (^)(id)> *)blockDictionary {
     if (_blockDictionary == nil) {

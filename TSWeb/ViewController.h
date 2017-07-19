@@ -14,6 +14,7 @@
 - (IBAction)webClick2:(UIButton *)sender;
 - (IBAction)webClick3:(UIButton *)sender;
 - (IBAction)webClick4:(UIButton *)sender;
+- (IBAction)webClick5:(id)sender;
 
 
 @end

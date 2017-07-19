@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12121"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TSSingleWebWindowViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webView" destination="SwE-ka-Tf2" id="6qu-pr-syt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SwE-ka-Tf2" customClass="TSWebView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.25098039220000001" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="SwE-ka-Tf2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="M85-Us-uI5"/>
+                <constraint firstItem="SwE-ka-Tf2" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="c28-d8-cCD"/>
+                <constraint firstItem="SwE-ka-Tf2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ciG-fT-IWb"/>
+                <constraint firstItem="SwE-ka-Tf2" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="tlR-O6-ll1"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
